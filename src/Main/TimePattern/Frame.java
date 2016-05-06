@@ -1,7 +1,7 @@
 package Main.TimePattern;
 
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.Region;
+import javafx.scene.control.TextField;
+
 import javafx.scene.layout.VBox;
 
 /**
@@ -17,7 +17,6 @@ public class Frame extends VBox {
 
         initializeControls();
         layoutControls();
-
     }
 
     private void initializeControls(){
@@ -30,4 +29,6 @@ public class Frame extends VBox {
         getChildren().add(timePattern1);
         getChildren().add(timePattern2);
     }
+
+
 }

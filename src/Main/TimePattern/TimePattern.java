@@ -21,6 +21,12 @@ public class TimePattern extends HBox{
         minute = new TextField();
         points = new Text(" : ");
 
+        hour.getStyleClass().add("timeField");
+        minute.getStyleClass().add("timeField");
+
+
+        hour.setOnMouseEntered(event -> focusEvent(hour.getText().isEmpty()));
+
         layoutControls();
     }
 
@@ -29,6 +35,9 @@ public class TimePattern extends HBox{
         this.hour = new TextField(hour);
         this.minute = new TextField(minute);
         points = new Text(" : ");
+
+        this.hour.getStyleClass().add("timeField");
+        this.minute.getStyleClass().add("timeField");
 
         layoutControls();
     }
@@ -39,5 +48,18 @@ public class TimePattern extends HBox{
         this.getChildren().add(hour);
         this.getChildren().add(points);
         this.getChildren().add(minute);
+    }
+
+    private void focusEvent(boolean b){
+
+        if(!b){
+            hour.getStyleClass().add("timeField-active");
+            hour.getStyleClass().remove("timeField");
+        }
+        else{
+            hour.getStyleClass().remove("timeField-active");
+            hour.getStyleClass().add("timeField");
+        }
+
     }
 }
