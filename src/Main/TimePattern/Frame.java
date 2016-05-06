@@ -5,7 +5,7 @@ import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 
 /**
- * Created by Michael on 03.05.2016.
+ * Created by Michael Läuchli & Irina Terribilini 
  */
 public class Frame extends VBox {
 

@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 /**
- * Created by Michael on 03.05.2016.
+ * Created by Michael Läuchli & Irina Terribilini
  *
  */
 public class MainTimePattern extends Application {

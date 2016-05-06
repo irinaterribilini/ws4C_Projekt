@@ -7,7 +7,7 @@ import javafx.scene.text.Text;
 
 
 /**
- * Created by Michael on 03.05.2016.
+ * Created by Michael Läuchli & Irina Terribilini
  */
 public class TimePattern extends HBox{
 
