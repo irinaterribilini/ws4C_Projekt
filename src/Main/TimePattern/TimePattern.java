@@ -1,6 +1,7 @@
 package Main.TimePattern;
 
 
+import javafx.beans.value.ObservableValue;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Text;
@@ -20,6 +21,7 @@ public class TimePattern extends HBox{
         hour = new TextField();
         minute = new TextField();
         points = new Text(" : ");
+
 
         hour.getStyleClass().add("timeField");
         minute.getStyleClass().add("timeField");
