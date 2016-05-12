@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24bc71c4-c04f-47dc-913e-1d03ed9841b6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Path/PathPane.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Path/PathPlayground.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Path/fonts.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Path/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ws4C_Projekt/Main/TimePattern/TimePattern.class" afterPath="$PROJECT_DIR$/out/production/ws4C_Projekt/Main/TimePattern/TimePattern.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ws4C_Projekt.iws" />
@@ -30,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="PathPlayground.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PathPlayground.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Path/PathPlayground.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -40,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PathPane.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PathPane.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Path/PathPane.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -701,12 +696,12 @@
       <workItem from="1462532727440" duration="6842000" />
       <workItem from="1462570664070" duration="506000" />
       <workItem from="1463045741688" duration="49000" />
-      <workItem from="1463047070709" duration="1892000" />
+      <workItem from="1463047070709" duration="1950000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14160000" />
+    <option name="totallyTimeSpent" value="14218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
@@ -987,14 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Path/PathPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Path/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1007,6 +994,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Path/PathPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
           <folding />
         </state>
       </provider>

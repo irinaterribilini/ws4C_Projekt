@@ -1,0 +1,22 @@
+PathPane {
+    -fx-background-color: white;
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+.playground {
+    -fx-pref-height: 250;
+    -fx-pref-width: 250;
+    -fx-border-radius: 7.5;
+}
+
+.pathPlayground {
+    -fx-pref-width: 300;
+    -fx-pref-height: 300;
+    -fx-border-width: 2;
+    -fx-scale-shape: true;
+    -fx-fill: "#FBB03B";
+    -fx-stroke: "#F15A24";
+    -fx-stroke-miter-limit: 10;
+    -fx-opacity: 0.8;
+}
