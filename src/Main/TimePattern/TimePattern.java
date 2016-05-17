@@ -12,14 +12,14 @@ import javafx.scene.text.Text;
  */
 public class TimePattern extends HBox{
 
-    private TextField hour;
-    private TextField minute;
+    private HourTextField hour;
+    private MinuteTextField minute;
     private Text points;
 
     public TimePattern(){
 
-        hour = new TextField();
-        minute = new TextField();
+        hour = new HourTextField();
+        minute = new MinuteTextField();
         points = new Text(" : ");
 
 
@@ -34,8 +34,8 @@ public class TimePattern extends HBox{
 
     public TimePattern(String hour,String minute){
 
-        this.hour = new TextField(hour);
-        this.minute = new TextField(minute);
+        this.hour = new HourTextField(hour);
+        this.minute = new MinuteTextField(minute);
         points = new Text(" : ");
 
         this.hour.getStyleClass().add("timeField");
