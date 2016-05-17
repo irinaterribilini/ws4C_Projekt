@@ -17,7 +17,7 @@ public class PathPane extends HBox {
 	}
 
 	private void initializeControls() {
-		circleStart = new Circle(250, 200, 30,
+		circleStart = new Circle(300, 300, 10,
 				new RadialGradient(0, 0, 0.2, 0.3, 1, true, CycleMethod.NO_CYCLE));
 
 		circleStart.getStyleClass().addAll("playground", "pathPlayground");
