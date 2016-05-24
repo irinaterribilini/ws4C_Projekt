@@ -29,12 +29,22 @@ public class TimePattern extends HBox{
 
 
         hour.textProperty().addListener(((observable, oldValue, newValue) -> {
-            if (newValue.isEmpty()||newValue == null){
+            if (newValue.isEmpty()){
                 hour.getStyleClass().remove("timeField-active");
                 hour.getStyleClass().add("timeField");
-            } else {
+            } else if(!hour.getStyleClass().contains("timeField-active")) {
                 hour.getStyleClass().remove("timeField");
                 hour.getStyleClass().add("timeField-active");
+            }
+        }));
+
+        minute.textProperty().addListener(((observable, oldValue, newValue) -> {
+            if (newValue.isEmpty()){
+                minute.getStyleClass().remove("timeField-active");
+                minute.getStyleClass().add("timeField");
+            } else if(!minute.getStyleClass().contains("timeField-active")) {
+                minute.getStyleClass().remove("timeField");
+                minute.getStyleClass().add("timeField-active");
             }
         }));
 
@@ -43,12 +53,43 @@ public class TimePattern extends HBox{
 
     public TimePattern(String hour,String minute){
 
-        this.hour = new HourTextField(hour);
-        this.minute = new MinuteTextField(minute);
+        if(hour != null){
+            this.hour = new HourTextField(hour);
+            this.hour.getStyleClass().add("timeField-active");
+        } else{
+            this.hour = new HourTextField("");
+            this.hour.getStyleClass().add("timeField");
+        }
+
         points = new Text(" : ");
 
-        this.hour.getStyleClass().add("timeField");
-        this.minute.getStyleClass().add("timeField");
+        if(minute != null){
+            this.minute = new MinuteTextField(minute);
+            this.minute.getStyleClass().add("timeField-active");
+        } else{
+            this.minute = new MinuteTextField("");
+            this.minute.getStyleClass().add("timeField");
+        }
+
+        this.hour.textProperty().addListener(((observable, oldValue, newValue) -> {
+            if (newValue.isEmpty()){
+                this.hour.getStyleClass().remove("timeField-active");
+                this.hour.getStyleClass().add("timeField");
+            } else if(!this.hour.getStyleClass().contains("timeField-active")) {
+                this.hour.getStyleClass().remove("timeField");
+                this.hour.getStyleClass().add("timeField-active");
+            }
+        }));
+
+        this.minute.textProperty().addListener(((observable, oldValue, newValue) -> {
+            if (newValue.isEmpty()){
+                this.minute.getStyleClass().remove("timeField-active");
+                this.minute.getStyleClass().add("timeField");
+            } else if(!this.minute.getStyleClass().contains("timeField-active")) {
+                this.minute.getStyleClass().remove("timeField");
+                this.minute.getStyleClass().add("timeField-active");
+            }
+        }));
 
         layoutControls();
     }
@@ -59,18 +100,5 @@ public class TimePattern extends HBox{
         this.getChildren().add(hour);
         this.getChildren().add(points);
         this.getChildren().add(minute);
-    }
-
-    private void focusEvent(boolean b){
-
-        if(!b){
-            hour.getStyleClass().add("timeField-active");
-            hour.getStyleClass().remove("timeField");
-        }
-        else{
-            hour.getStyleClass().remove("timeField-active");
-            hour.getStyleClass().add("timeField");
-        }
-
     }
 }
