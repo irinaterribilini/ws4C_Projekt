@@ -3,7 +3,7 @@ package Main.TimePattern;
 import javafx.scene.control.TextField;
 
 /**
- * Created by Michael on 17.05.2016.
+ * Created by Michael Läuchli & Irina Terribilini
  */
 public class HourTextField extends TextField {
 

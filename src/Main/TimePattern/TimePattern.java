@@ -22,23 +22,10 @@ public class TimePattern extends HBox{
         minute = new MinuteTextField();
         points = new Text(" : ");
 
-
         hour.getStyleClass().add("timeField");
         minute.getStyleClass().add("timeField");
 
-
-
-        hour.textProperty().addListener(((observable, oldValue, newValue) -> {
-            if (newValue.isEmpty()||newValue == null){
-                hour.getStyleClass().remove("timeField-active");
-                hour.getStyleClass().add("timeField");
-            } else {
-                hour.getStyleClass().remove("timeField");
-                hour.getStyleClass().add("timeField-active");
-            }
-        }));
-
-        layoutControls();
+               layoutControls();
     }
 
     public TimePattern(String hour,String minute){
@@ -61,16 +48,4 @@ public class TimePattern extends HBox{
         this.getChildren().add(minute);
     }
 
-    private void focusEvent(boolean b){
-
-        if(!b){
-            hour.getStyleClass().add("timeField-active");
-            hour.getStyleClass().remove("timeField");
-        }
-        else{
-            hour.getStyleClass().remove("timeField-active");
-            hour.getStyleClass().add("timeField");
-        }
-
-    }
 }
