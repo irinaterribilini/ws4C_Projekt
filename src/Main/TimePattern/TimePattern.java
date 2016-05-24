@@ -27,7 +27,16 @@ public class TimePattern extends HBox{
         minute.getStyleClass().add("timeField");
 
 
-        hour.setOnMouseEntered(event -> focusEvent(hour.getText().isEmpty()));
+
+        hour.textProperty().addListener(((observable, oldValue, newValue) -> {
+            if (newValue.isEmpty()||newValue == null){
+                hour.getStyleClass().remove("timeField-active");
+                hour.getStyleClass().add("timeField");
+            } else {
+                hour.getStyleClass().remove("timeField");
+                hour.getStyleClass().add("timeField-active");
+            }
+        }));
 
         layoutControls();
     }
