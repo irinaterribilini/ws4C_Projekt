@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340746a1-6f0c-434a-92e9-a4068a97b67b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ws4C_Projekt/Main/TimePattern/TimePattern.class" afterPath="$PROJECT_DIR$/out/production/ws4C_Projekt/Main/TimePattern/TimePattern.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/TimePattern/HourTextField.java" afterPath="$PROJECT_DIR$/src/Main/TimePattern/HourTextField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/TimePattern/MinuteTextField.java" afterPath="$PROJECT_DIR$/src/Main/TimePattern/MinuteTextField.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main/TimePattern/TimePattern.java" afterPath="$PROJECT_DIR$/src/Main/TimePattern/TimePattern.java" />
     </list>
     <ignored path="ws4C_Projekt.iws" />
@@ -39,17 +36,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimePattern.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TimePattern.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main/TimePattern/TimePattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+            <state relative-caret-position="1085">
+              <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MinuteTextField.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MinuteTextField.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main/TimePattern/MinuteTextField.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="476">
@@ -636,12 +633,12 @@
       <updated>1463477955882</updated>
       <workItem from="1463477962280" duration="40000" />
       <workItem from="1464070495881" duration="1693000" />
-      <workItem from="1464072362183" duration="2352000" />
+      <workItem from="1464072362183" duration="2532000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4085000" />
+    <option name="totallyTimeSpent" value="4265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -798,18 +795,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/TimePattern/TimePattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main/TimePattern/MinuteTextField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/TimePattern/TimePattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1085">
+          <caret line="76" column="20" selection-start-line="76" selection-start-column="20" selection-end-line="76" selection-end-column="20" />
           <folding />
         </state>
       </provider>
