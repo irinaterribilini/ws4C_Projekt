@@ -10,7 +10,7 @@ public class Frame extends VBox {
 
 
     private StopOver stopOver;
-    private TimePattern timePattern;
+    private StopOver stopOver2;
 
     public Frame(){
         initializeControls();
@@ -18,13 +18,13 @@ public class Frame extends VBox {
     }
 
     private void initializeControls(){
-        stopOver = new StopOver();
-        timePattern = new TimePattern();
+        stopOver = new StopOver("12", "30", "Aarau");
+        stopOver2 = new StopOver();
     }
 
     private void layoutControls() {
         getChildren().add(stopOver);
-        getChildren().add(timePattern);
+        getChildren().add(stopOver2);
     }
 
 

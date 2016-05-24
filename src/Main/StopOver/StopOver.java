@@ -21,7 +21,6 @@ public StopOver(){
 
     stop.getStyleClass().add("timeField");
 
-
     stop.textProperty().addListener(((observable, oldValue, newValue) -> {
         if (newValue.isEmpty()){
             stop.getStyleClass().remove("timeField-active");
@@ -35,6 +34,30 @@ public StopOver(){
     layoutControls();
 }
 
+    public StopOver(String hour, String minute, String stop){
+        this.setSpacing(10);
+        if(stop != null) {
+            this.stop = new TextField(stop);
+            this.stop.getStyleClass().add("timeField-active");
+        } else{
+            this.stop = new TextField();
+            this.stop.getStyleClass().add("timeField");
+        }
+        timePattern = new TimePattern(hour, minute);
+
+        this.stop.textProperty().addListener(((observable, oldValue, newValue) -> {
+            if (newValue.isEmpty()){
+                this.stop.getStyleClass().remove("timeField-active");
+                this.stop.getStyleClass().add("timeField");
+            } else if(!this.stop.getStyleClass().contains("timeField-active")) {
+                this. stop.getStyleClass().remove("timeField");
+                this.stop.getStyleClass().add("timeField-active");
+            }
+        }));
+
+        layoutControls();
+    }
+    
     private void layoutControls() {
         this.getChildren().add(timePattern);
         this.getChildren().add(stop);
