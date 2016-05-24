@@ -22,12 +22,10 @@ public class TimePattern extends HBox{
         minute = new MinuteTextField();
         points = new Text(" : ");
 
+
         hour.getStyleClass().add("timeField");
         minute.getStyleClass().add("timeField");
 
-<<<<<<< HEAD
-               layoutControls();
-=======
 
 
         hour.textProperty().addListener(((observable, oldValue, newValue) -> {
@@ -51,7 +49,6 @@ public class TimePattern extends HBox{
         }));
 
         layoutControls();
->>>>>>> origin/master
     }
 
     public TimePattern(String hour,String minute){
@@ -104,8 +101,4 @@ public class TimePattern extends HBox{
         this.getChildren().add(points);
         this.getChildren().add(minute);
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 }
