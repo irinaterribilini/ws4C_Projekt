@@ -1,5 +1,6 @@
 package Main.StopOverOverview;
 
+
 import javafx.scene.layout.HBox;
 
 /**
@@ -7,19 +8,21 @@ import javafx.scene.layout.HBox;
  */
 public class Frame extends HBox {
 
-    private StopOverOverview stopOverOverbiew;
+    private StopOverOverview stopOverOverview;
 
-    public Frame(){
+
+    public Frame() {
         initializeControls();
         layoutControls();
     }
 
     private void initializeControls() {
-        stopOverOverbiew = new StopOverOverview();
+        stopOverOverview = new StopOverOverview();
     }
 
     private void layoutControls() {
-        getChildren().add(stopOverOverbiew);
+        getChildren().add(stopOverOverview);
     }
+
 
 }
