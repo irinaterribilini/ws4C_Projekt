@@ -1,6 +1,7 @@
 package Main.StopOver;
 
 import Main.TimePattern.TimePattern;
+import javafx.beans.Observable;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
 
@@ -12,6 +13,7 @@ public class StopOver extends HBox {
 
     private TimePattern timePattern;
     private TextField stop;
+    private boolean empty;
 
 public StopOver(){
 
