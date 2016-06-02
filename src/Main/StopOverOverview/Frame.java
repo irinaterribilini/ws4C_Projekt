@@ -13,7 +13,6 @@ import javafx.scene.layout.HBox;
  */
 public class Frame extends HBox {
 
-    private static final ObservableList<StopOver> allItems = FXCollections.observableArrayList();
     private StopOverOverview stopOverOverview;
     private Button addButton;
 

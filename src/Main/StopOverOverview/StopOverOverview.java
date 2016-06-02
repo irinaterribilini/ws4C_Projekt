@@ -22,7 +22,6 @@ public class StopOverOverview extends VBox {
         for(StopOver stopOver : allItems){
            this.getChildren().add(stopOver);
         }
-
     }
 
     public void addItem(){
