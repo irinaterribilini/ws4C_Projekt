@@ -30,8 +30,9 @@ public class StopOverOverview extends VBox {
     }
 
     public void removeItem(){
-        allItems.remove(allItems.size()-1);
         this.getChildren().remove(allItems.get(allItems.size()-1));
+        allItems.remove(allItems.size()-1);
+
     }
 
 
