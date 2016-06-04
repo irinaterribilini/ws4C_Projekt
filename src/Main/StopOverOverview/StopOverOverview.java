@@ -29,6 +29,11 @@ public class StopOverOverview extends VBox {
         this.getChildren().add(allItems.get(allItems.size()-1));
     }
 
+    public void removeItem(){
+        allItems.remove(allItems.size()-1);
+        this.getChildren().remove(allItems.get(allItems.size()-1));
+    }
+
 
     public ObservableList<StopOver> getAllItems(){
         return allItems;
