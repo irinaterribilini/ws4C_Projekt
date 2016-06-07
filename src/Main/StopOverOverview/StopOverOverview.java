@@ -10,12 +10,33 @@ import javafx.scene.layout.VBox;
  */
 public class StopOverOverview extends VBox {
 
-    private ObservableList<StopOver> stopOverArrayList;
+
     private static final ObservableList<StopOver> allItems = FXCollections.observableArrayList();
 
     public StopOverOverview(){
-        stopOverArrayList = FXCollections.observableArrayList();
+
         layoutControls();
+    }
+
+    public StopOverOverview(String input){
+        String[] stops = input.split("-");
+        String[][] stopParts = new String[(stops.length)][3];
+
+        for(int i = 0; i<stops.length; i++){
+            if(stops[i].charAt(0)==' '){
+                stops[i] = stops[i].substring(1);
+            }
+            if(stops[i].charAt(stops[i].length()-1)==' '){
+                stops[i] = stops[i].substring(0, stops[i].length()-2);
+            }
+            stopParts[i][0] = stops[i].substring(stops[i].length()-5, stops[i].length()-4);
+            stopParts[i][1] = stops[i].substring(stops[i].length()-2, stops[i].length()-1);
+            stopParts[i][2] = stops[i].substring(0, stops[i].length()-7);
+        }
+        for(int i = 0 ; i < stopParts.length; i++){
+            allItems.add(new StopOver(stopParts[i][0],stopParts[i][1],stopParts[i][2]));
+        }
+
     }
 
     private void layoutControls() {
