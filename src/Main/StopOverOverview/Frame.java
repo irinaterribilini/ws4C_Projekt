@@ -1,11 +1,9 @@
 package Main.StopOverOverview;
 
-
-import Main.StopOver.StopOver;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 
 
 /**
@@ -13,6 +11,7 @@ import javafx.scene.layout.HBox;
  */
 public class Frame extends HBox {
 
+    VBox buttonBox;
     private StopOverOverview stopOverOverview;
     private Button addButton;
     private Button deleteButton;
@@ -25,14 +24,20 @@ public class Frame extends HBox {
 
     private void initializeControls() {
         stopOverOverview = new StopOverOverview();
-        addButton = new Button("hinzufügen");
-        deleteButton = new Button ("löschen");
+        buttonBox = new VBox();
+
+        addButton = new Button("+");
+        deleteButton = new Button ("-");
+        addButton.getStyleClass().add("addButton");
+        deleteButton.getStyleClass().add("deleteButton");
     }
 
     private void layoutControls() {
-        getChildren().addAll(stopOverOverview, addButton, deleteButton);
+        getChildren().addAll(stopOverOverview, addButton, deleteButton, buttonBox);
         addButton.setMaxWidth(Double.MAX_VALUE);
-        deleteButton.setMaxWidth(Double.MAX_VALUE);}
+        deleteButton.setMaxWidth(Double.MAX_VALUE);
+        buttonBox.getChildren().addAll(addButton, deleteButton);
+    }
 
     private void addEventHandlers() {
         addButton.setOnAction(event -> stopOverOverview.addItem());

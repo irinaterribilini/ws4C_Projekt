@@ -3,9 +3,30 @@
     -fx-border: solid;
     -fx-border-color: white white rgba( 190, 190, 190, 100) white ;
 }
+
 .timeField-active{
     -fx-background-color: transparent;
     -fx-border: solid;
     -fx-border-color: white white rgba( 120, 120, 120, 100) white ;
 }
 
+.button  {
+    -fx-background-radius: 30, 30;
+    -fx-background-insets: -1.4, 0;
+    -fx-border-radius: 30;
+    -fx-border-width: 5;
+    -fx-padding: 3;
+    -fx-font-size: 20pt;
+}
+
+.button:hover{
+-fx-background-color: blue;
+}
+
+.addButton{
+    -fx-background-color: green;
+}
+
+.deleteButton{
+    -fx-background-color: red;
+}
