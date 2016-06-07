@@ -1,21 +1,32 @@
 .timeField{
     -fx-background-color: transparent;
     -fx-border: solid;
-    -fx-border-color: white white rgba( 190, 190, 190, 100) white ;
+    -fx-border-color: white white rgba(190, 190, 190, 100) white ;
 }
 .timeField-active{
     -fx-background-color: transparent;
     -fx-border: solid;
-    -fx-border-color: white white rgba( 120, 120, 120, 100) white ;
+    -fx-border-color: white white #64b5f6 white ;
 }
 
 .button{
-    -fx-background-color: white, white;
-    -fx-background-radius: 16.4, 15;
-    -fx-background-insets: -1.4, 0;
-    -fx-border-radius: 15;
+    -fx-background-radius: 60;
+    -fx-border-radius: 60;
     -fx-border-width: 2;
-    -fx-border-color: dimgrey;
     -fx-padding: 0;
-    -fx-font-size: 0;
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-background-color: #64b5f6;
+}
+
+.addButton{
+    -fx-background-color: #4caf50;
+}
+
+.deleteButton{
+    -fx-background-color: #f44336;
 }
