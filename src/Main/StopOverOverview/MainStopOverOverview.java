@@ -27,7 +27,7 @@ public class MainStopOverOverview extends Application{
         primaryStage.setScene(scene);
 
         primaryStage.setWidth(300);
-        primaryStage.setHeight(300);
+        primaryStage.setHeight(500);
 
         primaryStage.show();
     }
