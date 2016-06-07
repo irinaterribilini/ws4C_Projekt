@@ -27,6 +27,8 @@ public class Frame extends HBox {
         stopOverOverview = new StopOverOverview();
         stopOverOverview2 = new StopOverOverview(inputstring);
         buttonBox = new VBox();
+        buttonBox.setSpacing(10);
+        buttonBox.setMinWidth(30);
         addButton = new Button("+");
         deleteButton = new Button ("-");
         addButton.getStyleClass().add("addButton");
