@@ -14,8 +14,10 @@ import javafx.scene.layout.HBox;
 public class Frame extends HBox {
 
     private StopOverOverview stopOverOverview;
+    private StopOverOverview stopOverOverview2;
     private Button addButton;
     private Button deleteButton;
+    private String imputstring = "Olten  05:57 - Zürich HB  06:28 - Zürich Flughafen  06:50 - Winterthur  07:05 - Wil SG  07:24 - Uzwil  07:32 - Flawil  07:38 - Gossau SG  07:43 - St. Gallen  07:53";
 
     public Frame() {
         initializeControls();
@@ -25,12 +27,13 @@ public class Frame extends HBox {
 
     private void initializeControls() {
         stopOverOverview = new StopOverOverview();
+        stopOverOverview2 = new StopOverOverview(imputstring);
         addButton = new Button("hinzufügen");
         deleteButton = new Button ("löschen");
     }
 
     private void layoutControls() {
-        getChildren().addAll(stopOverOverview, addButton, deleteButton);
+        getChildren().addAll(stopOverOverview, stopOverOverview2, addButton, deleteButton);
         addButton.setMaxWidth(Double.MAX_VALUE);
         deleteButton.setMaxWidth(Double.MAX_VALUE);}
 
