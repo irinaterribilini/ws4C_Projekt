@@ -94,6 +94,11 @@ public class TimePattern extends HBox{
         layoutControls();
     }
 
+    public String saveStopOver(){
+        String returnValue = hour.getText()+ ":" + minute.getText();
+        return returnValue;
+    }
+
     private void layoutControls() {
         hour.setPrefWidth(40);
         minute.setPrefWidth(40);

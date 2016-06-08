@@ -29,6 +29,10 @@ public class StopOverPattern extends HBox{
         addEventHandlers();
     }
 
+    public String saveStopOver(){
+        return stopOverOverview.saveStopovers();
+    }
+
     private void initializeControls() {
         buttonBox = new VBox();
         buttonBox.setSpacing(10);
@@ -50,5 +54,4 @@ public class StopOverPattern extends HBox{
         addButton.setOnAction(event -> stopOverOverview.addItem());
         deleteButton.setOnAction(event -> stopOverOverview.removeItem());
     }
-
 }

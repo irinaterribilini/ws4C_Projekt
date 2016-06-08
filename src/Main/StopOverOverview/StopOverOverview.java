@@ -41,6 +41,15 @@ public class StopOverOverview extends VBox {
 
     }
 
+    public String saveStopovers(){
+        String returnValue = "";
+        for(StopOver stopOver:allItems){
+            returnValue += stopOver.saveStopOver() + " - ";
+        }
+        returnValue = returnValue.substring(0,returnValue.length()-3);
+        return returnValue;
+    }
+
 
     private void layoutControls() {
         for(StopOver stopOver : allItems){

@@ -59,6 +59,11 @@ public StopOver(){
 
         layoutControls();
     }
+
+    public String saveStopOver(){
+        String returnValue = stop.getText() + " " + timePattern.saveStopOver();
+        return returnValue;
+    }
     
     private void layoutControls() {
         this.getChildren().add(timePattern);
