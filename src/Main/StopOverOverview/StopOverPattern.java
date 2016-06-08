@@ -1,3 +1,4 @@
+
 package Main.StopOverOverview;
 
 import javafx.scene.control.Button;
@@ -20,6 +21,10 @@ public class StopOverPattern extends HBox{
         layoutControls();
         addEventHandlers();
 
+    }
+
+    public void setStops(String input){
+        stopOverOverview.fill(input);
     }
 
     public StopOverPattern(String input){

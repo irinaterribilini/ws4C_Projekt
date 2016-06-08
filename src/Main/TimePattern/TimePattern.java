@@ -99,6 +99,10 @@ public class TimePattern extends HBox{
         return returnValue;
     }
 
+    public void fill(String input){
+
+    }
+
     private void layoutControls() {
         hour.setPrefWidth(40);
         minute.setPrefWidth(40);
